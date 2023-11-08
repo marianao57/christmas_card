@@ -1,0 +1,71 @@
+body {
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  margin: 2rem;
+  gap: 4px;
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.item {
+  min-width: 350px;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 100px;
+  display: flex;
+  text-align: center;
+  padding: 3rem;
+}
+.col {
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 100%;
+  border-radius: 5rem;
+}
+.image:hover {
+  transform: scale(1.02);
+}
+.card:hover {
+  transform: rotate(5deg);
+}
+/* Cambia el tamaño de la fuente cuando el ancho de la pantalla sea menor o igual a 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Otra Media Query para otro tamaño de pantalla */
+@media (max-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Estilo por defecto para pantallas más grandes */
+body {
+  font-size: 25px;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #efb185;
+  border: none;
+  border-radius: 10px;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.img-function {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
